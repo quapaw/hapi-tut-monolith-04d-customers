@@ -109,11 +109,11 @@ Take a look at the lent errors on the files that have been running the the past 
 
    * Have fun cleaning up the lenting errors until you get this
    
-    ```
-    Linting Report
-    
-    0 0
-    ```
+```
+Linting Report
+
+0 0
+```
 
    * Look at the code coverage report.
      The report will highlight lines of code that have not been tested with your unit test.
@@ -121,45 +121,45 @@ Take a look at the lent errors on the files that have been running the the past 
      You can add the following code to TestCustomer.js to get to 100% coverage
     
    
-    ```javascript
+```javascript
     test('get customers', (done) => {
-    
-            const options = {
-                method: 'GET',
-                url: '/customers'
-            };
-    
-            server.inject(options, (res) => {
-    
-                expect(res.statusCode).to.equal(200);
-                done();
-            });
+
+        const options = {
+            method: 'GET',
+            url: '/customers'
+        };
+
+        server.inject(options, (res) => {
+
+            expect(res.statusCode).to.equal(200);
+            done();
         });
-    
-        test('load customer', (done) => {
-    
-            const SampleCustomer = {
-                id:     126,
-                first:  'David',
-                middle: 'H',
-                last:   'Father',
-                addressLine: '9 S. Ninth Street',
-                city:        'Little Rock',
-                state:       'AR',
-                postalCode:  '72206'
-            };
-    
-            const options = {
-                method: 'POST',
-                url: '/customers',
-                payload: SampleCustomer
-            };
-    
-            server.inject(options, (res) => {
-    
-                expect(res.statusCode).to.equal(200);
-                done();
-            });
+    });
+
+    test('load customer', (done) => {
+
+        const SampleCustomer = {
+            id:     126,
+            first:  'David',
+            middle: 'H',
+            last:   'Father',
+            addressLine: '9 S. Ninth Street',
+            city:        'Little Rock',
+            state:       'AR',
+            postalCode:  '72206'
+        };
+
+        const options = {
+            method: 'POST',
+            url: '/customers',
+            payload: SampleCustomer
+        };
+
+        server.inject(options, (res) => {
+
+            expect(res.statusCode).to.equal(200);
+            done();
         });
-    
-    ```
+    });
+
+```
