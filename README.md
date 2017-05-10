@@ -109,7 +109,7 @@ Take a look at the lent errors on the files that have been running the the past 
     L40 - WARNING - eol-last - Newline required at end of file but not found.
     ```
 
-    * Have fun cleaning up the lenting errors until you get this
+   * Have fun cleaning up the lenting errors until you get this
     
     ```
     Linting Report
@@ -117,10 +117,10 @@ Take a look at the lent errors on the files that have been running the the past 
     0 0
     ```
 
-    * Look at the code coverage report.
-    The report will highlight lines of code that have not been tested with your unit test.
-    See how close to 100% coverage you can get
-    You can add the following code to TestCustomer.js to get to 100% coverage
+   * Look at the code coverage report.
+     The report will highlight lines of code that have not been tested with your unit test.
+     See how close to 100% coverage you can get
+     You can add the following code to TestCustomer.js to get to 100% coverage
     
    
     ```javascript
