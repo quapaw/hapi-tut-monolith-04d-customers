@@ -64,10 +64,8 @@ This step, 04d, will add unit testing.
 
 * Tests may all pass but the lenting may fail.  
 # Look at test.html 
-Take a look at the lent errors on the files that have been running the the past tutorials
-    
-    
-    ```
+Take a look at the lent errors on the files that have been running the the past tutorials    
+```
     index.js
     L1 - ERROR - strict - Use the global form of 'use strict'.
     L1 - WARNING - hapi/hapi-scope-start - Missing blank line at beginning of function.
@@ -107,10 +105,10 @@ Take a look at the lent errors on the files that have been running the the past 
     L31 - WARNING - hapi/hapi-scope-start - Missing blank line at beginning of function.
     L32 - ERROR - prefer-const - 'payload' is never reassigned. Use 'const' instead.
     L40 - WARNING - eol-last - Newline required at end of file but not found.
-    ```
+```
 
    * Have fun cleaning up the lenting errors until you get this
-    
+   
     ```
     Linting Report
     
